@@ -20,7 +20,6 @@
                         quick-tap-ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
-                        retro-tap;
                 };
         };
 
