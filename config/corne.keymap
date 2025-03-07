@@ -68,12 +68,12 @@
                 };
                 bt_layer {
 // ------------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5   |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  TAB |  1  |  2  |  3  |  4  |  CLR ALL   |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR|     |     |     |     |      |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT5  |   |     |     |     |     |     |      |
 //              |     |     |     | BSPC |   | CLR ALL | ALT |
                         bindings = <
-   &trans    &trans      &trans      &trans      &trans      &trans          &trans   &trans   &trans &trans    &trans &trans
+   &trans    &trans      &trans      &trans      &trans      &bt BTG_CLR_ALL          &trans   &trans   &trans &trans    &trans &trans
    &trans    &trans      &trans      &trans      &trans      &trans          &trans   &trans   &trans &trans    &trans &trans
    &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans   &trans   &trans &trans    &trans &trans
                                 &trans  &trans    &kp BSPC           &bt BT_CLR_ALL  &trans   &kp RALT
