@@ -4,13 +4,21 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MIOVE_VAL 1000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define ZMK_POINTING_DEFAULT_SCROLL_VAL 25
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
 #include <dt-bindings/zmk/pointing.h>
+
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
 
 // Consider using hold-trigger-key-positions to force cross-hand modifiers for the home row
 
